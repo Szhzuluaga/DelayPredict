@@ -5,10 +5,12 @@ from pydantic import BaseModel
 import joblib
 from challenge.model import DelayModel
 from typing import List
+from mangum import Mangum
 
 loaded_model = joblib.load('Modelo_entrenado.pkl')
 
 app = FastAPI()
+handler = Mangum(app=app)
 
 delay_model=DelayModel()
 
