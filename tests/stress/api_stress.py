@@ -1,5 +1,6 @@
 from locust import HttpUser, task
 
+
 class StressUser(HttpUser):
     
     @task

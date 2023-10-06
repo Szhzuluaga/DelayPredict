@@ -1,13 +1,5 @@
-name: DELAY CI/CD
+name: 'Continuous Integration'
 
-on:
-  # Trigger the workflow on push
-  push:
-    branches:
-      # Push events on main branch
-      - main
-
-# The Job defines a series of steps that execute on the same runner.
 jobs:
 
   CI:

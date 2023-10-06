@@ -70,7 +70,6 @@ class DelayModel:
 
         """
         target = target.squeeze()
-        features.to_csv('features3.csv', index=False)
         x_train2, x_test2, y_train2, y_test2 = train_test_split(features, target, test_size = 0.33, random_state = 42)
 
         n_y0 = len(y_train2[y_train2 == 0])
